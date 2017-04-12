@@ -125,7 +125,8 @@ textarea {
 
     .navleft ul, nav aside, .down,
     .pub, .container ul, .end1, .end2 ul,
-    .partenaires, .lastlast p{
+    .partenaires, .lastlast p,
+    .link1 i, .link2 i{
       display: none;
     }
 
@@ -291,6 +292,93 @@ textarea {
       width: 30px;
       height: 70px;
       margin-right: 4px;
+    }
+
+    @media (min-width: 480px) {
+
+      .link1 i, .link2 i,
+      .link1, .link2{
+        display: flex;
+      }
+
+      .link1, .link2{
+        align-items: center;
+        justify-content: center;
+      }
+
+      .link1 i, .link2 i{
+        margin-right: 4px;
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+      }
+
+      .sectionleft h1{
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+
+      .regions figure{
+        display: none;
+      }
+
+      .regions{
+        width: 100%;
+        margin: 10px auto;
+      }
+
+      .pub{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px lightgrey solid;
+      }
+
+      .pub h2{
+        text-align: center;
+        background: #474747;
+        color: #f2f2f2;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px;
+      }
+
+      .link1, .link2{
+        width: 100%;
+        padding: 0;
+      }
+
+      .link1 a, .link2 a{
+        padding: 8px;
+      }
+
+      .sectionleft{
+        width: 40%;
+      }
+
+      .mapfrance{
+        width: 50%;
+      }
+
+      .parag{
+        margin: 15px auto;
+      }
+    }
+
+    @media (min-width: 972px) {
+
+      
     }
 
 

@@ -95,13 +95,84 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+    /*#f56b2a*/
+    /*#3873bd*/
+    /*#666 bar bk*/
+    /*#f2f2f2 footer1 bk*/
+    /*#474747 footer2 bk*/
+    /*font open sans*/
+    /*#1a1a1a font color*/
+    /*#fafafa color text with bk color*/
 
+    /*GLOBAL*/
 
+    body{
+      color: #1a1a1a;
+      width: 100%;
+      font-family: 'open sans', sans-serif;
+    }
 
+    *{
+      margin: 0;
+    }
 
+    /*COMMUN RULES*/
 
+    .navleft ul, nav aside, .down,
+    .pub, .container ul, .end1, .end2 ul,
+    .partenaires, .lastlast p{
+      display: none;
+    }
 
+    .navleft{
+      display: flex;
+    }
 
+    figure, img{
+      width: 100%;
+      margin: 0;
+    }
+
+    /*header*/
+
+    header{
+      background: #f56b2a;
+      height: 60px;
+    }
+
+    header figure{
+      width: 45%;
+    }
+
+    .navleft{
+      width: 90%;
+      margin: auto;
+      padding: 10px;
+      align-items: center;
+    }
+
+    .mobile{
+      width: 20%;
+      background: white;
+      border-radius: 6px;
+      margin-right: 6%;
+    }
+
+    .mobile p{
+      text-align: center;
+      text-transform: uppercase;
+      color: #f56b2a;
+      padding: 9px 6px;
+    }
+
+    .mobile:hover .down{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .down{
+      position: absolute;
+    }
 
 
 

@@ -161,6 +161,7 @@ textarea {
       background: white;
       border-radius: 6px;
       margin-right: 10%;
+      cursor: pointer;
     }
 
     .mobile p{
@@ -171,9 +172,17 @@ textarea {
       font-size: 14px;
     }
 
-    .mobile:hover .down{
+    /*.mobile:hover .down{
       display: flex;
       flex-direction: column;
+    }*/
+
+    .mobile p:hover{
+      color: #3873bd;
+    }
+
+    .mobile:hover{
+      background: #f2f2f2;
     }
 
     /*dropdown apres*/
@@ -203,24 +212,34 @@ textarea {
       color: #f56b2a;
     }
 
-    .sectionleft a:nth-child(2){
+    .link1, .link2{
+      padding: 7px 20px;
+      width: 250px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .link1{
       background: #3873bd;
       border: 1px #3873bd solid;
       color: white;
     }
 
-    .sectionleft a:nth-child(3){
+    .link1:hover{
+      background: #4185d8;
+      cursor: pointer;
+    }
+
+    .link2{
       border: 1px #3873bd solid;
       color: #3873bd;
     }
 
-    .sectionleft a{
-      padding: 7px 20px;
-      width: 250px;
-      font-size: 14px;
-      text-align: center;
-      border-radius: 4px;
-      margin-bottom: 15px;
+    .link2:hover{
+      background: #f2f2f2;
+      cursor: pointer;
     }
 
     .regions select{
@@ -261,11 +280,13 @@ textarea {
       font-size: 14px;
       justify-content: space-between;
       align-items: center;
+      color: #f2f2f2;
     }
 
     .lastlast img{
       width: 30px;
       height: 70px;
+      margin-right: 4px;
     }
 
 

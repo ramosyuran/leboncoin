@@ -378,7 +378,13 @@ textarea {
 
     @media (min-width: 972px) {
 
-      
+      .navleft ul, nav aside{
+        display: flex;
+      }
+
+      .mobile{
+        display: none;
+      }
     }
 
 

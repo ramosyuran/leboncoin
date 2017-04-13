@@ -382,8 +382,53 @@ textarea {
         display: flex;
       }
 
-      .mobile{
+      .mobile, nav ul li:nth-child(1){
         display: none;
+      }
+
+      nav{
+        display: flex;
+        align-items: center;
+      }
+
+      .navleft{
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+      }
+
+      nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+      }
+
+      nav li{
+        font-size: 12px;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      nav li:hover{
+        text-decoration: underline;
+      }
+
+      nav aside{
+        color: white;
+        border-left: 1px white solid;
+        border-right: 1px white solid;
+        padding: 18px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+      }
+
+      nav aside:hover{
+        background: white;
+        color: #f56b2a;
+        cursor: pointer;
       }
     }
 

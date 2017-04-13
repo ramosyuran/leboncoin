@@ -273,6 +273,17 @@ textarea {
       text-decoration: underline;
     }
 
+    /*ANNONCE PAGE*/
+
+    .containerannonce h1{
+      font-size: 20px;
+      font-weight: normal;
+      color: grey;
+      border-bottom: 1px lightgrey solid;
+    }
+
+    /*END ANNONCE PAGE*/
+
     .end2{
       background: #474747;
       color: white;

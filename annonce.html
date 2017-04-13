@@ -62,49 +62,123 @@
         <!-- container -->
         <div class="containerannonce">
 
-          <h1>Votre annonce</h1>
+          <h1>Deposé une annonce</h1>
 
-          <form action="annonce.html" method="post">
+          <section class="section1">
 
-            <label for="categorie">Catégorie *</label>
-            <select name="categorie" id="categorie">
+            <h2>Votre annonce</h2>
 
-              <option>Choisissez une catégorie</option>
+            <form action="annonce.html" method="post">
 
-              <optgroup label="--EMPLOI--">
-                <option>Offres d'emploi</option>
-              </optgroup>
+              <label for="categorie">Catégorie *</label>
+              <select name="categorie" id="categorie">
 
-              <optgroup label="--VEHICULES--">
-                <option>Voitures</option>
-                <option>Motos</option>
-                <option>Utilitaires</option>
-                <option>Equipament Auto</option>
-              </optgroup>
+                <option>Choisissez une catégorie</option>
 
-              <optgroup label="--IMMOBILIER--">
-                <option>Locations</option>
-                <option>Colocations</option>
-              </optgroup>
+                <optgroup label="--EMPLOI--">
+                  <option>Offres d'emploi</option>
+                </optgroup>
 
-            </select>
+                <optgroup label="--VEHICULES--">
+                  <option>Voitures</option>
+                  <option>Motos</option>
+                  <option>Utilitaires</option>
+                  <option>Equipament Auto</option>
+                </optgroup>
 
-            <label for="qui">Vous êtes un *</label>
-            <input type="radio" name="particulaires" id="qui" value="particulaires">
-            <label for="qui">Particulaires</label>
-            <input type="radio" name="professional" id="qui" value="particulaires">
-            <label for="qui">Professional</label>
+                <optgroup label="--IMMOBILIER--">
+                  <option>Locations</option>
+                  <option>Colocations</option>
+                </optgroup>
 
-            <label for="type">Type d'annonce *</label>
-            <input type="radio" name="offres" id="type" value="offres">
-            <label for="type">Offres</label>
-            <input type="radio" name="demandes" id="type" value="demandes">
-            <label for="type">Demandes</label>
+              </select>
 
-            <label for="annonce">Type de l'annonce *</label>
-            <input type="text" name="annonce" id="annonce">
+              <label for="qui">Vous êtes un *</label>
+              <input type="radio" name="particulaires" id="qui" value="particulaires">
+              <label for="qui">Particulaires</label>
+              <input type="radio" name="professional" id="qui" value="particulaires">
+              <label for="qui">Professional</label>
 
-          </form>
+              <label for="type">Type d'annonce *</label>
+              <input type="radio" name="offres" id="type" value="offres">
+              <label for="type">Offres</label>
+              <input type="radio" name="demandes" id="type" value="demandes">
+              <label for="type">Demandes</label>
+
+              <label for="annonce">Type de l'annonce *</label>
+              <input type="text" name="annonce" id="annonce">
+
+              <label for="textannonce">Text de l'annonce *</label>
+              <textarea name="textannonce" rows="5" cols="20"></textarea>
+
+              <label for="prix">Prix</label>
+              <input type="text" name="prix" id="prix">
+
+              <label for="photo"><strong>Photo</strong> : Une annonce avec photo est 7 fois plus consultée qu'une annonce sans photo</label>
+              <div class="photo">
+                <figure>
+                  <img src="img/photoprincipale.png" alt="photo">
+                </figure>
+                <figure>
+                  <img src="img/photo2.png" alt="photo">
+                </figure>
+                <figure>
+                  <img src="img/photo3.png" alt="photo">
+                </figure>
+                <figure>
+                  <img src="img/photosuppmobile.png" alt="photo">
+                </figure>
+              </div>
+
+            </form>
+
+          </section>
+
+          <section class="section2">
+
+            <h2>Localisation</h2>
+
+            <div class="">
+              <label for="ville">Ville ou code postal *</label>
+              <input type="text" name="ville" id="ville">
+
+              <label for="adresse">Adresse</label>
+              <input type="text" name="adresse" id="adresse" placeholder="Voie ou numero + voie">
+              <input type="submit" name="adressesub" value="Valider mon adresse">
+              <p>Complétez votre adresse et les personnes utilisant la recherche autour de soi trouveront plus facilement votre annonce.
+                 Si vous ne souhaitez pas renseigner votre adresse exacte, indiquez votre rue sans donner le numéro. Cette information ne sera conservée que le temps de la publication de votre annonce.</p>
+            </div>
+
+            <figure>
+              <img src="annoncemap.png" alt="annonce map">
+            </figure>
+
+          </section>
+
+          <section class="section3">
+
+            <h2>Vos informations</h2>
+
+            <label for="pseudo">Pseudo *</label>
+            <input type="text" name="pseudo" id="pseudo">
+
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email">
+
+            <label for="tel">Téléphone *</label>
+            <input type="text" name="tel" id="tel">
+
+            <input type="checkbox" name="check1" id="check1">
+            <label for="chek1">Masquer le numéro de téléphone dans l'annonce.</label>
+
+            <input type="checkbox" name="check2" id="check2">
+            <label for="chek2">Je ne souhaite pas être sollicité par des sociétés étrangères au site leboncoin.fr<label>
+
+          </section>
+
+          <p>Champs obligatoires *</p>
+
+          <input type="submit" name="valider" value="Valider">
 
 
 

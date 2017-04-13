@@ -528,7 +528,48 @@ textarea {
       .lastlast p{
         margin-right: 8px;
       }
+    }
 
+    @media (min-width: 1024px) {
+
+      .container ul{
+        display: block;
+        list-style: none;
+        width: 25%;
+        padding: 0;
+        text-align: right;
+        color: #3873bd;
+        font-size: 15px;
+      }
+
+      nav ul li:nth-child(1){
+        display: flex;
+      }
+
+      .container ul li:hover{
+        color: #f56b2a;
+      }
+
+      .regions{
+        display: none;
+      }
+
+      .mapfrance{
+        width: 40%;
+      }
+
+      .sectionleft{
+        width: 30%;
+      }
+
+      .container{
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .end1, .end2, .navleft, nav aside{
+        padding: 20px;
+      }
 
     }
 

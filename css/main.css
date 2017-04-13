@@ -378,8 +378,14 @@ textarea {
 
     @media (min-width: 972px) {
 
-      .navleft ul, nav aside{
+      .navleft ul, nav aside,
+      .end1, .end2,
+      .partenaires, .lastlast p{
         display: flex;
+      }
+
+      .end2 ul{
+        display: block;
       }
 
       .mobile, nav ul li:nth-child(1){
@@ -430,7 +436,110 @@ textarea {
         color: #f56b2a;
         cursor: pointer;
       }
+
+      footer ul{
+        list-style: none;
+        padding: 0;
+      }
+
+      footer{
+        font-size: 13px;
+      }
+
+      .end1, .end2{
+        padding: 10px;
+        margin: auto;
+      }
+
+      .end1{
+        background: #f2f2f2;
+        color: #3873bd;
+        justify-content: space-between;
+      }
+
+      .end1 ul li:hover, .end2 ul li:hover,
+      .partenaires a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .title h3{
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 13px;
+        margin: 14px 0;
+        width: 90%;
+      }
+
+      .end1 .title h3{
+        border-bottom: 1px lightgrey solid;
+      }
+
+      .end1 li{
+        margin: 2px auto;
+      }
+
+      .end1 ul, .end2 ul{
+        width: 25%;
+      }
+
+      .end2{
+        flex-wrap: wrap;
+      }
+
+      .end2 li{
+        margin: 14px auto;
+      }
+
+      .end2 li img{
+        width: 100px;
+        margin: 2px;
+      }
+
+      .end2 li select{
+        color: #1a1a1a;
+        width: 100%;
+        padding: 5px;
+      }
+
+      .end2 .title h3{
+        border-bottom: 1px grey solid;
+      }
+
+      .partenaires{
+        width: 100%;
+        padding: 11px;
+        display: flex;
+        justify-content: center;
+        border-top: 1px grey solid;
+        border-bottom: 1px grey solid;
+      }
+
+      .last {
+        font-size: 13px;
+        width: 100%;
+      }
+
+      .lastlast{
+        display: flex;
+        align-items: center;
+      }
+
+      .lastlast p{
+        margin-right: 8px;
+      }
+
+
     }
+
+    /*#f56b2a*/
+    /*#3873bd*/
+    /*#666 bar bk*/
+    /*#f2f2f2 footer1 bk*/
+    /*#474747 footer2 bk*/
+    /*font open sans*/
+    /*#1a1a1a font color*/
+    /*#fafafa color text with bk color*/
 
 
 

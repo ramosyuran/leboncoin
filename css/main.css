@@ -282,6 +282,73 @@ textarea {
       border-bottom: 1px lightgrey solid;
     }
 
+    .containerannonce h2{
+      font-size: 14px;
+      font-weight: normal;
+      background: #666;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .containerannonce{
+      font-size: 14px;
+    }
+
+    .containerannonce form{
+      padding: 10px;
+    }
+
+    .section1, .section2, .section3{
+      border: 1px lightgrey solid;
+      margin-bottom: 15px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .containerannonce form input,
+    .containerannonce form textarea,
+    .containerannonce form select{
+      margin: 5px auto 20px auto;
+    }
+
+    .containerannonce form select,
+    .containerannonce form textarea{
+      width: 100%;
+      border: 1px lightgrey solid;
+    }
+
+    .containerannonce form select{
+      background: white;
+      padding: 10px;
+    }
+
+    .containerannonce form textarea{
+      height: 150px;
+    }
+
+    .containerannonce form input[name="annonce"],
+    .containerannonce form input[name="prix"]{
+      width: 94%;
+      padding: 10px;
+      border: 1px lightgrey solid;
+    }
+
+    .photo{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .photo figure:nth-child(1),
+    .photo figure:nth-child(2),
+    .photo figure:nth-child(3){
+      width: 30%;
+      margin: 15px 10px 10px 0;
+
+    }
+
     /*END ANNONCE PAGE*/
 
     .end2{

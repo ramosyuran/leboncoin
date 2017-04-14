@@ -296,7 +296,7 @@ textarea {
       font-size: 14px;
     }
 
-    .containerannonce form{
+    .containerannonce form, .section2sub{
       padding: 10px;
     }
 
@@ -330,7 +330,8 @@ textarea {
     }
 
     .containerannonce form input[name="annonce"],
-    .containerannonce form input[name="prix"]{
+    .containerannonce form input[name="prix"],
+    .section2 input{
       width: 94%;
       padding: 10px;
       border: 1px lightgrey solid;
@@ -346,8 +347,30 @@ textarea {
     .photo figure:nth-child(3){
       width: 30%;
       margin: 15px 10px 10px 0;
-
     }
+
+    .section2 input[name="adressesub"]{
+      background: #f56b2a;
+      color: white;
+      width: 70%;
+      border: 0;
+    }
+
+    .section2sub{
+      width: 100%;
+    }
+
+    form p{
+      background: #accaef;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .section2 figure{
+      padding: 10px;
+    }
+
 
     /*END ANNONCE PAGE*/
 

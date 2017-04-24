@@ -195,7 +195,8 @@ textarea {
       position: absolute;
     }*/
 
-    .container, .containerannonce{
+    .container, .containerannonce,
+    .containeroffres{
       padding: 5%;
       margin-top: 60px;
     }
@@ -401,6 +402,116 @@ textarea {
     }
 
     /*END ANNONCE PAGE*/
+
+    /*PAGE OFFRES*/
+
+    .offres1, .offres2part1 h2 span{
+      display: none;
+    }
+
+    #tt{
+      font-size: 19px;
+      color: grey;
+      margin-top: 50px;
+      margin-bottom: 0;
+      padding: 5%;
+    }
+
+    .containeroffres{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: inherit;
+      flex-direction: column-reverse;
+    }
+
+    .une{
+      border: #f56b2a 2px solid;
+    }
+
+    .une h4{
+      background: #f56b2a;
+      color: white;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .alaune figure{
+      width: 150px;
+      margin-right: 3px;
+    }
+
+    .alaune{
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-bottom: lightgrey 1px solid;
+    }
+
+    .prixvendre{
+      color: #f56b2a;
+      font-weight: bold;
+      margin: 5px auto;
+    }
+
+    .offres2part1title{
+      display: flex;
+      margin: 5px auto;
+    }
+
+    .offres2part1 h2{
+      font-weight: normal;
+      font-size: 18px;
+      border: 1px #ccc solid;
+      padding: 15px 10px;
+      background: #e6e6e6;
+    }
+
+    .offres2part1 h2:nth-child(1){
+    background: white;
+    border-bottom: none;
+    }
+
+    .offres2part1 select{
+      width: 100%;
+      padding: 12px;
+      border: #3873bd 1px solid;
+      border-radius: 4px;
+      color: #3873bd;
+      background: white;
+      margin: 10px auto;
+    }
+
+    .example{
+      border: #ccc 1px solid;
+      padding: 8px;
+    }
+
+    .vendre figure{
+      width: 150px;
+      margin-right: 5px;
+    }
+
+    .vendre{
+      display: flex;
+    }
+
+    .quand{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    .quand figure{
+      width: 30px;
+    }
+
+    .disc h3{
+      color: #3873bd;
+    }
+
+
+
+    /*END OF PAGE OFFRES*/
 
     .end2{
       background: #474747;

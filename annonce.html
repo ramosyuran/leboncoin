@@ -70,8 +70,8 @@
 
             <form action="annonce.html" method="post">
 
-              <label for="categorie">Catégorie *</label>
-              <select name="categorie" id="categorie">
+              <label for="categorie">Catégorie *</label><br>
+              <select name="categorie" id="categorie"><br>
 
                 <option>Choisissez une catégorie</option>
 
@@ -91,7 +91,7 @@
                   <option>Colocations</option>
                 </optgroup>
 
-              </select>
+              </select><br>
 
               <label for="qui">Vous êtes un *</label><br>
               <input type="radio" name="particulaires" id="qui" value="particulaires">
@@ -105,16 +105,17 @@
               <input type="radio" name="demandes" id="type" value="demandes">
               <label for="type">Demandes</label><br>
 
-              <label for="annonce">Type de l'annonce *</label>
-              <input type="text" name="annonce" id="annonce">
+              <label for="annonce">Type de l'annonce *</label><br>
+              <input type="text" name="annonce" id="annonce"><br>
 
-              <label for="textannonce">Text de l'annonce *</label>
-              <textarea name="textannonce"></textarea>
+              <label for="textannonce">Text de l'annonce *</label><br>
+              <textarea name="textannonce"></textarea><br>
 
               <label for="prix">Prix</label><br>
-              <input type="text" name="prix" id="prix">
+              <input type="text" name="prix" id="prix"><br>
 
               <label for="photo"><strong>Photo</strong> : Une annonce avec photo est 7 fois plus consultée qu'une annonce sans photo</label>
+
               <div class="photo">
                 <figure>
                   <img src="img/photoprincipale.png" alt="photo">
@@ -127,6 +128,9 @@
                 </figure>
                 <figure>
                   <img src="img/photosuppmobile.png" alt="photo">
+                </figure>
+                <figure>
+                  <img src="img/photosupp.png" alt="photo">
                 </figure>
               </div>
 
@@ -143,10 +147,13 @@
               <input type="text" name="ville" id="ville">
 
               <label for="adresse">Adresse</label>
-              <input type="text" name="adresse" id="adresse" placeholder="Voie ou numero + voie">
-              <input type="submit" name="adressesub" value="Valider mon adresse">
-              <p>Complétez votre adresse et les personnes utilisant la recherche autour de soi trouveront plus facilement votre annonce.
-                 Si vous ne souhaitez pas renseigner votre adresse exacte, indiquez votre rue sans donner le numéro. Cette information ne sera conservée que le temps de la publication de votre annonce.</p>
+              <div class="fl">
+                <input type="text" name="adresse" id="adresse" placeholder="Voie ou numero + voie">
+                <input type="submit" name="adressesub" value="Valider mon adresse">
+
+                <p>Complétez votre adresse et les personnes utilisant la recherche autour de soi trouveront plus facilement votre annonce.
+                   Si vous ne souhaitez pas renseigner votre adresse exacte, indiquez votre rue sans donner le numéro. Cette information ne sera conservée que le temps de la publication de votre annonce.</p>
+              </div>
             </form>
 
             <figure>
@@ -171,7 +178,7 @@
               <input type="text" name="tel" id="tel"><br>
 
               <input type="checkbox" name="check1" id="check1">
-              <label for="chek1">Masquer le numéro de téléphone dans l'annonce.</label>
+              <label for="chek1">Masquer le numéro de téléphone dans l'annonce.</label><br>
 
               <input type="checkbox" name="check2" id="check2">
               <label for="chek2">Je ne souhaite pas être sollicité par des sociétés étrangères au site leboncoin.fr<label>
@@ -180,11 +187,9 @@
 
           </section>
 
-          <p>Champs obligatoires *</p>
+          <p id="champs">Champs obligatoires *</p>
 
           <input type="submit" name="valider" value="Valider">
-
-
 
         </div>
 

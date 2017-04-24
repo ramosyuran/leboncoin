@@ -126,7 +126,8 @@ textarea {
     .navleft ul, nav aside, .down,
     .pub, .container ul, .end1, .end2 ul,
     .partenaires, .lastlast p,
-    .link1 i, .link2 i{
+    .link1 i, .link2 i,
+    .photo figure:nth-child(5){
       display: none;
     }
 
@@ -280,6 +281,7 @@ textarea {
       font-weight: normal;
       color: grey;
       border-bottom: 1px lightgrey solid;
+      margin-bottom: 30px;
     }
 
     .containerannonce h2{
@@ -312,28 +314,33 @@ textarea {
     .containerannonce form textarea,
     .containerannonce form select{
       margin: 5px auto 20px auto;
+      border-radius: 4px;
     }
 
     .containerannonce form select,
     .containerannonce form textarea{
       width: 100%;
       border: 1px lightgrey solid;
+      border-radius: 4px;
     }
 
     .containerannonce form select{
       background: white;
       padding: 10px;
+      border-radius: 4px;
     }
 
     .containerannonce form textarea{
       height: 150px;
+      border-radius: 4px;
     }
 
     .containerannonce form input[name="annonce"],
     .containerannonce form input[name="prix"],
-    .section2 input{
+    .section2 input, .section3 input{
       width: 94%;
       padding: 10px;
+      border-radius: 4px;
       border: 1px lightgrey solid;
     }
 
@@ -344,7 +351,8 @@ textarea {
 
     .photo figure:nth-child(1),
     .photo figure:nth-child(2),
-    .photo figure:nth-child(3){
+    .photo figure:nth-child(3),
+    .photo figure:nth-child(5){
       width: 30%;
       margin: 15px 10px 10px 0;
     }
@@ -352,7 +360,8 @@ textarea {
     .section2 input[name="adressesub"]{
       background: #f56b2a;
       color: white;
-      width: 70%;
+      border-radius: 4px;
+      width: 100%;
       border: 0;
     }
 
@@ -371,6 +380,25 @@ textarea {
       padding: 10px;
     }
 
+    .section3 input[name="check1"],
+    .section3 input[name="check2"]{
+      width: inherit;
+      margin: 5px auto;
+    }
+
+    #champs{
+      text-align: right;
+    }
+
+    .containerannonce input[name="valider"]{
+      background: #3873bd;
+      border: 0;
+      border-radius: 4px;
+      color: white;
+      width: 100%;
+      padding: 12px;
+      margin: 10px auto;
+    }
 
     /*END ANNONCE PAGE*/
 
@@ -475,6 +503,22 @@ textarea {
       .parag{
         margin: 15px auto;
       }
+
+      /*annonce page*/
+
+      .containerannonce form input[name="annonce"],
+      .containerannonce form input[name="prix"],
+      .section2 input, .section3 input{
+        width: 97%;
+      }
+
+        .photo figure:nth-child(1),
+        .photo figure:nth-child(2),
+        .photo figure:nth-child(3){
+          width: 15%;
+        }
+
+      /*end annonce page*/
     }
 
     @media (min-width: 972px) {
@@ -537,6 +581,73 @@ textarea {
         color: #f56b2a;
         cursor: pointer;
       }
+
+      /*page annonce*/
+
+      .containerannonce form input[name="annonce"],
+      .containerannonce form textarea,
+      .section3 input,
+      .section1 form select{
+        width: 50%;
+      }
+
+      .containerannonce form input[name="prix"]{
+        width: 25%;
+      }
+
+      .photo figure:nth-child(1),
+      .photo figure:nth-child(2),
+      .photo figure:nth-child(3),
+      .photo figure:nth-child(5){
+        width: 20%;
+      }
+
+      .photo figure:nth-child(4){
+        display: none;
+      }
+
+      .photo figure:nth-child(5){
+        display: block;
+      }
+
+      .section2{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .section2 form input{
+        margin: 5px auto;
+      }
+
+      .fl{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .fl input[name="adressesub"]{
+        width: 33%;
+      }
+
+      .fl input[name="adresse"]{
+        width: 60%;
+        margin: 3px 0;
+      }
+
+      .section2 figure{
+        width: 40%;
+      }
+
+      .section2 form{
+        width: 55%;
+      }
+
+      .containerannonce input[name="valider"]{
+        width: 25%;
+      }
+
+      /*end page annonce*/
 
       footer ul{
         list-style: none;
@@ -670,6 +781,13 @@ textarea {
 
       .end1, .end2, .navleft, nav aside{
         padding: 20px;
+      }
+    }
+
+    @media (min-width: 1080px) {
+
+      .section2{
+        align-items: flex-start;
       }
 
     }

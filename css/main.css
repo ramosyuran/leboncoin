@@ -420,18 +420,22 @@ textarea {
     .containeroffres{
       display: flex;
       flex-wrap: wrap;
+      width: 93%;
+      padding: 0;
+      margin: auto;
       margin-top: inherit;
       flex-direction: column-reverse;
     }
 
     .une{
       border: #f56b2a 2px solid;
+      margin-bottom: 20px;
     }
 
     .une h4{
       background: #f56b2a;
       color: white;
-      padding: 12px;
+      padding: 10px;
       text-align: center;
     }
 
@@ -443,7 +447,6 @@ textarea {
     .alaune{
       display: flex;
       align-items: center;
-      padding: 8px;
       border-bottom: lightgrey 1px solid;
     }
 
@@ -462,13 +465,13 @@ textarea {
       font-weight: normal;
       font-size: 18px;
       border: 1px #ccc solid;
-      padding: 15px 10px;
+      padding: 15px 8px;
       background: #e6e6e6;
     }
 
     .offres2part1 h2:nth-child(1){
-    background: white;
-    border-bottom: none;
+      background: white;
+      border-bottom: none;
     }
 
     .offres2part1 select{
@@ -486,6 +489,14 @@ textarea {
       padding: 8px;
     }
 
+    .example p{
+      font-size: 12px;
+    }
+
+    .example h3{
+      font-size: 15px;
+    }
+
     .vendre figure{
       width: 150px;
       margin-right: 5px;
@@ -499,6 +510,7 @@ textarea {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+      align-items: center;
     }
 
     .quand figure{

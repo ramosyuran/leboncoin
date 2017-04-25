@@ -420,9 +420,7 @@ textarea {
     .containeroffres{
       display: flex;
       flex-wrap: wrap;
-      width: 93%;
       padding: 0;
-      margin: auto;
       margin-top: inherit;
       flex-direction: column-reverse;
     }
@@ -448,6 +446,11 @@ textarea {
       display: flex;
       align-items: center;
       border-bottom: lightgrey 1px solid;
+    }
+
+    .offres2, .une{
+      width: 93%;
+      margin: auto;
     }
 
     .prixvendre{
@@ -490,11 +493,11 @@ textarea {
     }
 
     .example p{
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .example h3{
-      font-size: 15px;
+      font-size: 16px;
     }
 
     .vendre figure{
@@ -513,6 +516,10 @@ textarea {
       align-items: center;
     }
 
+    .vendre article{
+      width: 100%;
+    }
+
     .quand figure{
       width: 30px;
     }
@@ -521,8 +528,6 @@ textarea {
       color: #3873bd;
       margin: 0px auto 8px auto;
     }
-
-
 
     /*END OF PAGE OFFRES*/
 
@@ -642,8 +647,42 @@ textarea {
           width: 15%;
         }
 
-      /*end annonce page*/
+    /*end annonce page*/
+
+    /*page offres*/
+
+    .containeroffres{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
     }
+
+    .une{
+      width: 25%;
+    }
+
+    .une h4{
+      font-size: 14px;
+    }
+
+    .offres2{
+      width: 70%;
+    }
+
+    .alaune{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .alaune figure{
+      margin: 10px;
+    }
+
+    /*end page offres*/
+
+    }
+
 
     @media (min-width: 972px) {
 
@@ -772,6 +811,84 @@ textarea {
       }
 
       /*end page annonce*/
+
+      /*page offres*/
+
+      #tt{
+        display: none;
+      }
+
+      .offres1{
+        display: flex;
+        justify-content: space-between;
+        background: #e6e6e6;
+        width: 100%;
+        padding: 15px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        border-bottom: 1px lightgrey solid;
+      }
+
+      .part1 form, .part2 form{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .part1{
+        width: 50%;
+      }
+
+      .part2, .part3{
+        width: 24%;
+      }
+
+      .part3 input{
+        width: 100%;
+      }
+
+      #check label{
+        font-size: 12px;
+      }
+
+      #check{
+        width: 60%;
+        height: 40px;
+      }
+
+      .part1 select{
+        width: 40%;
+      }
+
+      .test{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .offres1 input, .offres1 select{
+        background: white;
+        border-radius: 4px;
+        padding: 8px;
+        border: 1px #ccc solid;
+      }
+
+      .part3 input{
+        background: #3873bd;
+        color: white;
+        border: 0;
+        padding: 11px;
+        font-size: 14px;
+      }
+
+      .part1, .part2, .part3{
+        font-size: 14px;
+      }
+
+      .part1 input[name="recherche"],
+      .part2 select{
+        margin-bottom: 10px;
+      }
+
+      /*end page offres*/
 
       footer ul{
         list-style: none;
